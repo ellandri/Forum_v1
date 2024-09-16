@@ -22,7 +22,6 @@ def list_forum(request):
             return JsonResponse(serializer.data, status=201)
         return JsonResponse(serializer.errors, status=400)
     
-    
 @csrf_exempt
 def forum_detail(request, id):
     try :
